@@ -449,7 +449,7 @@ body.lock {
     letter-spacing: 0.02em;
     width: 264px;
     margin-top: 16px;
-    padding-bottom: 72px;
+    margin-bottom: 72px;
     text-align: start;
 }
 
@@ -982,16 +982,27 @@ body.lock {
         margin-right: 120px;
     }
 
-    .contacts {
-        display: flex;
-        flex-direction: column;
-    }
+    
 
     .contacts-info {
         padding: 0;
         font-size: 12px;
+        font-weight: 400;
+        line-height: 14px;
         letter-spacing: 0.04em;
+        color: var(--text-color);
     }
+
+    .contacts {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .contacts li {
+        line-height: 14px;
+    }
+
 
     .active {
     color: var(--pressed-state-color);
@@ -1034,8 +1045,8 @@ body.lock {
     }
 
     .element-title {
-        font-size: 36px;
-        font-weight: 700;
+        font-size: 20px;
+        font-weight: 500;
     }
 
     .features-text {
@@ -1180,6 +1191,11 @@ body.lock {
 
     .contacts {
         flex-direction: row;
+        gap: 40px;
+    }
+
+    .contacts-tel {
+        color: var(--text-color);
     }
 
     .contacts-info {
@@ -1251,6 +1267,10 @@ body.lock {
         flex-direction: row;
         gap: 24px;
         padding-top: 0;
+    }
+
+    .features-text {
+        font-weight: normal;
     }
 
     .samples-container {
