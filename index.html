@@ -18,89 +18,43 @@
     <title>Web Studio</title>
   </head>
   <body>
-    <header class="header">
-      <div class="header-container">
+    <header class="page-header">
+      <div class="container">
         <div class="logo-container">
           <a href="./index.html" class="logo"
             ><span class="logo-color">WEB</span>STUDIO</a
           >
         </div>
-
-        <div class="header-menu">
-          <div class="menu-icon">
-            <span class="menu-line"></span><span class="menu-line"></span
-            ><span class="menu-line"></span>
-          </div>
-
-          <div class="menu-wrapper">
-            <nav class="nav menu-body">
-              <ul class="menu menu-list">
-                <li class="menu-item">
-                  <a href="./index.html" class="nav-item menu-link active"
-                    >Studio</a
-                  >
-                </li>
-                <li class="menu-item">
-                  <a href="./portfolio.html" class="nav-item menu-link"
-                    >Portfolio</a
-                  >
-                </li>
-                <li class="menu-item">
-                  <a href="#" class="nav-item menu-link">Contacts</a>
-                </li>
-              </ul>
-
-              <!-- <div class="contacts-container"> -->
-              <address>
-                <ul class="contacts">
-                  <li>
-                    <a
-                      href="tel:+110001111111"
-                      class="contacts-info contacts-tel"
-                      >+11 (000) 111-11-11</a
-                    >
-                  </li>
-                  <li>
-                    <a href="mailto:info@devstudio.com" class="contacts-info"
-                      >info@devstudio.com</a
-                    >
-                  </li>
-                </ul>
-              </address>
-              <ul class="social-list">
-                <li>
-                  <a class="social-link" href="#">
-                    <svg class="social" width="24" height="24">
-                      <use href="./images/icons.svg#sotial-instagram"></use>
-                    </svg>
-                  </a>
-                </li>
-                <li>
-                  <a class="social-link" href="#">
-                    <svg class="social" width="24" height="24">
-                      <use href="./images/icons.svg#sotial-twitter"></use>
-                    </svg>
-                  </a>
-                </li>
-                <li>
-                  <a class="social-link" href="#">
-                    <svg class="social" width="24" height="24">
-                      <use href="./images/icons.svg#sotial-facebook"></use>
-                    </svg>
-                  </a>
-                </li>
-                <li>
-                  <a class="social-link" href="#">
-                    <svg class="social" width="24" height="24">
-                      <use href="./images/icons.svg#sotial-linkedin"></use>
-                    </svg>
-                  </a>
-                </li>
-              </ul>
-              <!-- </div> -->
-            </nav>
-          </div>
-        </div>
+        <button
+          class="menu-toggle js-open-menu"
+          aria-expanded="false"
+          aria-controls="mobile-menu"
+        >
+          <svg class="icon-burger" width="32" height="30">
+            <use href="./images/icons.svg#icon"></use>
+          </svg>
+        </button>
+        <ul class="menu">
+          <li>
+            <a href="./index.html" class="link active">Studio</a>
+          </li>
+          <li><a href="./portfolio.html" class="link">Portfolio</a></li>
+          <li><a href="#" class="link">Contacts</a></li>
+        </ul>
+        <address>
+          <ul class="menu contacts">
+            <li>
+              <a href="tel:+110001111111" class="contacts-info contacts-tel"
+                >+11 (000) 111-11-11</a
+              >
+            </li>
+            <li>
+              <a href="mailto:info@devstudio.com" class="contacts-info"
+                >info@devstudio.com</a
+              >
+            </li>
+          </ul>
+        </address>
       </div>
     </header>
 
@@ -410,6 +364,69 @@
         </div>
       </section>
     </main>
+
+    <div class="menu-container js-menu-container" id="mobile-menu">
+      <button class="menu-toggle js-close-menu">
+        <svg class="mobile-menu-close" width="8" height="8">
+          <use href="./images/icons.svg#close-btn"></use>
+        </svg>
+      </button>
+
+      <ul class="mobile-menu">
+        <li><a href="./index.html" class="link active">Studio</a></li>
+        <li><a href="./portfolio.html" class="link">Portfolio</a></li>
+        <li><a href="#" class="link">Contacts</a></li>
+      </ul>
+
+      <div class="contacts-container">
+        <address>
+          <ul class="mobile-menu mobile-contacts">
+            <li>
+              <a href="tel:+110001111111" class="contacts-info contacts-tel"
+                >+11 (000) 111-11-11</a
+              >
+            </li>
+            <li>
+              <a href="mailto:info@devstudio.com" class="contacts-info"
+                >info@devstudio.com</a
+              >
+            </li>
+          </ul>
+        </address>
+
+        <ul class="social-list">
+          <li>
+            <a class="social-link" href="#">
+              <svg class="social" width="24" height="24">
+                <use href="./images/icons.svg#sotial-instagram"></use>
+              </svg>
+            </a>
+          </li>
+          <li>
+            <a class="social-link" href="#">
+              <svg class="social" width="24" height="24">
+                <use href="./images/icons.svg#sotial-twitter"></use>
+              </svg>
+            </a>
+          </li>
+          <li>
+            <a class="social-link" href="#">
+              <svg class="social" width="24" height="24">
+                <use href="./images/icons.svg#sotial-facebook"></use>
+              </svg>
+            </a>
+          </li>
+          <li>
+            <a class="social-link" href="#">
+              <svg class="social" width="24" height="24">
+                <use href="./images/icons.svg#sotial-linkedin"></use>
+              </svg>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+
     <footer class="footer">
       <div class="container">
         <div class="footer-top">
